@@ -18,7 +18,6 @@ function getMovieList(url) {
 function displayMovieList(movies){
 
     movies.Search.forEach(function(movie) {
-        // console.log(movie.Title);
         let title = movie.Title;
         let year = movie.Year;
         let imdbID = movie.imdbID;
@@ -27,7 +26,6 @@ function displayMovieList(movies){
 
         let urlMovieIdDetails = `http://www.omdbapi.com/?i=${imdbID}&apikey=${apikey}`
         $.get(urlMovieIdDetails, function(movieDetails) {
-            // console.log(movieDetails.imdbID + " inside");
             let Rated = movieDetails.Rated;
             let Released = movieDetails.Released;
             let Runtime = movieDetails.Runtime;
