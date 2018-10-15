@@ -1,0 +1,67 @@
+body {
+    background-color: lightpink;
+}
+
+
+#body-content {
+    display: flex;
+}
+
+
+#container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: lightsteelblue;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
+
+#ulMovieList {
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.liClass {
+    padding: 0 15px;
+    border-bottom: 1px solid #fff;
+}
+
+
+.divliClass {
+    padding: 0 5px;
+    
+}
+
+
+.p-title {
+    font-weight: 800;
+}
+
+
+@media (min-width: 491px) {
+    .liClass {
+        padding: 0 10px;
+        display: flex;
+    }
+}
+
+
+@media (min-width: 1081px) {
+    #container {
+        max-width: 1500px;
+        margin: 0 auto;
+        background-color: lightsteelblue;
+        padding-left: 10px;
+        padding-right: 10px;
+       
+    }
+    
+}
